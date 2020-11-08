@@ -80,7 +80,10 @@ section {
     padding: 50px 10px;
 }
 
-/* Extra small devices (phones, 600px and down) */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     margin: 0;
@@ -88,8 +91,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     color: black;
-    scroll-behavior: smooth;
 }
+
+/* Extra small devices (phones, 600px and down) */
 
 header {
     width: 100vw;
@@ -121,13 +125,13 @@ header {
 
 .nav-items a {
     padding: 20px;
-    width: 100%;
     text-decoration: none;
     font-weight: 500;
     font-size: 35px;
     text-transform: uppercase;
     text-decoration: none;
 }
+
 img {
     width: 100%;
 }
@@ -216,20 +220,28 @@ main div.portfolio div p {
 
 #blog {}
 
-#contact form input {
-    background-color: #edf2f6;
-    text-transform: capitalize;
-    margin: 5px 0;
-}
-
 #contact div h1 {
     text-transform: capitalize;
     font-weight: 800;
     font-size: 30px;
 }
 
-#contact div input[type="submit"] {
-    background-color: #ffe600;
+#contact {
+    overflow: hidden;
+}
+
+#contact form input {
+    text-transform: capitalize;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+#contact div input[type="text"],
+input[type="email"],
+input[type="textbox"] {
+    background-color: #edf2f6;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
 .contactDetails {
@@ -248,6 +260,10 @@ main div.portfolio div p {
     justify-content: center;
 }
 
+.contactDetails span a {
+    text-decoration: none;
+}
+
 .socialmedia span {
     padding: 50px 0;
     display: flex;
@@ -255,6 +271,7 @@ main div.portfolio div p {
     margin-left: 20vw;
     justify-content: space-between;
 }
+
 .socialmedia span i {
     font-size: 40px;
 }
@@ -262,7 +279,7 @@ main div.portfolio div p {
 footer {
     background-color: black;
     color: white;
-    padding: 10px 20px;
+    padding: 30px 20px;
 }
 
 footer div {
@@ -271,6 +288,27 @@ footer div {
     justify-content: center;
     font-size: 10px;
     color: white;
+}
+
+footer img {
+    width: 85px;
+}
+
+.backToTopButton a {
+    position: fixed;
+    right: 40px;
+    color: white;
+    bottom: 40px;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    border: solid black;
+    border-radius: 50%;
+}
+
+.backToTopButton i {
+    font-size: 30px;
+    padding: 15px 17px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

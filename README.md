@@ -20,3 +20,5 @@ https://www.graphberry.com/item/mint-minimal-portfolio-psd-template
 <a href="https://www.freepik.com/photos/coffee">Coffee photo created by KamranAydinov - www.freepik.com</a>
 <br/>
 <a href="https://www.freepik.com/photos/people">People photo created by stockking - www.freepik.com</a>
+<br/>
+<a href='https://www.freepik.com/photos/business'>Business photo created by diana.grytsku - www.freepik.com</a>
