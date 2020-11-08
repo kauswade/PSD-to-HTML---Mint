@@ -108,6 +108,11 @@ header {
     justify-content: space-between;
 }
 
+.nav a img {
+    height: 50px;
+    width: 85px;
+}
+
 .nav a i {
     font-size: 35px;
     padding-top: 10px;
@@ -149,7 +154,7 @@ main div.portfolio {
 
 main div.portfolio div h1 {
     text-transform: capitalize;
-    font-size: 38px;
+    font-size: 58px;
     font-weight: 800;
     margin: 0 0;
 }
@@ -162,7 +167,6 @@ main div.portfolio div p {
 }
 
 /* Work */
-#work {}
 
 #work .work-options-mobile {
     display: flex;
@@ -196,8 +200,6 @@ main div.portfolio div p {
 
 /* About */
 
-#about {}
-
 #about .luke {
     background-size: cover;
     height: 30vh;
@@ -217,8 +219,6 @@ main div.portfolio div p {
 }
 
 /* Blog */
-
-#blog {}
 
 #contact div h1 {
     text-transform: capitalize;
@@ -312,7 +312,45 @@ footer img {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    input {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .nav a i {
+        color: gray;
+    }
+    
+    /* Main Content */
+
+    main {
+        padding: 40px 0px;
+        padding-bottom: 0;
+    }
+
+    main div div.grid-item img {
+        display: none;
+    }
+
+    main div.portfolio {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/office-skyscrapers-business-district.jpg);
+        background-size: cover;
+        color: white;
+    }
+
+    /* Contact */
+
+    #contact div input {
+        margin: 5px 20%;
+    }
+
+    /* Footer */
+
+    footer {
+        padding-left: 20%;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
