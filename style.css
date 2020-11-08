@@ -149,7 +149,7 @@ main {
 }
 
 main div.portfolio {
-    padding: 50px 10px;
+    padding: 45px 10px;
 }
 
 main div.portfolio div h1 {
@@ -224,10 +224,6 @@ main div.portfolio div p {
     text-transform: capitalize;
     font-weight: 800;
     font-size: 30px;
-}
-
-#contact {
-    overflow: hidden;
 }
 
 #contact form input {
@@ -321,7 +317,7 @@ footer img {
     .nav a i {
         color: gray;
     }
-    
+
     /* Main Content */
 
     main {
@@ -337,6 +333,13 @@ footer img {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/office-skyscrapers-business-district.jpg);
         background-size: cover;
         color: white;
+    }
+
+    /* Work */
+
+    #work div.brand {
+        display: flex;
+        justify-content: space-between;
     }
 
     /* Contact */
@@ -356,7 +359,268 @@ footer img {
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    input {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    /* Main Content */
+
+    main {
+        padding: 35px 0px;
+        padding-bottom: 0;
+    }
+
+    main div.portfolio {
+        background: none;
+        color: black;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    main div.portfolio div h1 {
+        font-size: 48px;
+    }
+
+    main div div.grid-item {
+        width: 50%;
+    }
+
+    main div div.grid-item img {
+        display: inherit;
+    }
+
+    /* Work */
+
+    #work .work-options-mobile {
+        display: none;
+    }
+
+    #work .work-options {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffe600;
+        padding: 20px 200px;
+    }
+
+    #work div.display img {
+        display: inline;
+        width: 49%;
+    }
+
+    #work div.brand {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* About */
+
+    #about div.creators {
+        display: flex;
+    }
+    
+    #about .luke {
+        width: 50%;
+    }
+
+    /* Contact */
+
+    #contact .grid-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #contact .grid-container div.grid-item {
+        width: 50%;
+        margin: 0 5px;
+    }
+
+    #contact .grid-item div form input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .contactDetails, .socialmedia {
+        margin-left: 15%;
+    }
+
+    .socialmedia span {
+        width: 37%;
+    }
+
+    /* Footer */
+
+    footer {
+        padding-left: 20%;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    input {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    header {
+        padding: 10px 10vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav a i {
+        display: none;
+    }
+
+    .nav-items {
+        flex-direction: row;
+        height: 50px !important;
+    }
+
+    .nav-items a {
+        padding: 0 20px;
+        font-size: 25px;
+    }
+
+    /* Main Content */
+
+    main {
+        padding: 85px 10vw;
+        padding-bottom: 0;
+    }
+
+    main div.portfolio {
+        background: none;
+        color: black;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    main div.portfolio div h1 {
+        font-size: 48px;
+    }
+
+    main div div.grid-item {
+        width: 50%;
+    }
+
+    main div div.grid-item img {
+        display: inherit;
+    }
+
+    /* Work */
+
+    #work .work-options-mobile {
+        display: none;
+    }
+
+    #work .work-options {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffe600;
+        padding: 20px 200px;
+    }
+
+    #work div.display img {
+        display: inline;
+        width: 49%;
+    }
+
+    #work div.brand {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    #work div.brand img {
+        width: 33%;
+    }
+
+    /* About */
+
+    #about div.creators {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #about .luke {
+        width: 40%;
+        height: 50vh;
+    }
+
+    /* Contact */
+
+    #contact .grid-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #contact .grid-container div.grid-item {
+        width: 40%;
+        margin: 0 5px;
+    }
+
+    #contact .grid-item div form input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .contactDetails, .socialmedia {
+        margin-left: 9%;
+    }
+
+    .socialmedia span {
+        width: 37%;
+    }
+
+    /* Footer */
+
+    footer {
+        padding-left: 20vh;
+    }
+}
+
+/*  Extra large devices (Full HD desktops, 1920px and up) */
+@media only screen and (min-width: 1920px) {
+    input {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    header {
+        padding: 10px 20vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Main */
+
+    main {
+        padding: 85px 20vw;
+    }
+
+    /* About */
+
+    #about .luke {
+        width: 50vh;
+        height: 50vh;
+    }
+
+    /* Contact */
+
+    .contactDetails, .socialmedia {
+        margin: 0;
+        padding: 0;
+        width: 56vw;
+    }
+
+    /* Footer */
+
+    footer {
+        padding-left: 20vw;
+    }
+
+}
